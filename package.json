@@ -2,7 +2,7 @@
   "name": "telegram-anti-spam-bot",
   "version": "1.0.0",
   "author": "bgme",
-  "license": "MIT",
+  "license": "AGPL-3.0",
   "main": "dist/worker.js",
   "eslintConfig": {
     "root": true,

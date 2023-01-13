@@ -17,7 +17,9 @@ function debug(ctx: Context) {
 }
 
 function echo(ctx: Context) {
-  ctx.sendMessage(JSON.stringify(ctx))
+  const update = ctx.update as Update.MessageUpdate
+  const message = update.message as Message.TextMessage
+  ctx.sendMessage(JSON.stringify({ update, message }))
 }
 
 bot.command('ping', ping)
