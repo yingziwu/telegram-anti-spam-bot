@@ -1,0 +1,22 @@
+name = "telegram-anti-spam-bot"
+type = "javascript"
+main = "dist/worker.js"
+account_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+compatibility_flags = []
+workers_dev = true
+compatibility_date = "2023-01-13"
+
+[vars]
+telegramBotToken = "xxxxxxxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+webhookPath = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+reportChatId = ""
+webhookDomain = "https://xxxxxxxxxxx.xxxxxxxxxx.workers.dev"
+webhookAdminPath = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+[[d1_databases]]
+binding = "DATABASE"
+database_name = "telegram_sapm_bot"
+database_id = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx"
+
+[build]
+command = "yarn install && yarn run format && yarn run lint && yarn run build"
